@@ -2,11 +2,15 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import {RedditService} from './services/reddit.service';
 import { TabsPage } from '../pages/tabs/tabs';
+import { HttpModule, Http } from '@angular/http'; 
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  // providers: [RedditService,
+  //             HttpModule,
+  //             Http]
 })
 export class MyApp {
   rootPage:any = TabsPage;
